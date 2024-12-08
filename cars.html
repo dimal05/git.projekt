@@ -6,6 +6,142 @@
     <title>Cars</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="navbar">
+           <div class="logo">
+               <a href="index.html"> <img src="logo.png" alt="logo"></a>
+           </div>
+           <nav>
+              
+               <ul id="MenuItems">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="cars.html">Cars</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="account.html">Account</a></li>
+               </ul>
+           </nav>
+            
+           <img src="menu.png" class="menu-icon" width="30px" height="30px" onclick="menutoggle()">
+          </div>
+         </div>
+         <!-- Cars -->
+   
+  <div class="small-container">
+    <h2 class="title1">Cars</h2>
+    <div class="row">
+            <div class="col-4" data-slide="1">
+                <img name="mySlide" id="slideshow" src="p1.png" alt="Car 1"/>
+                <h4>Mercedes-Benz C63 S AMG</h4>
+                <p>price:119,740 €</p>
+                <button> > </button>
+            </div>
+            <div class="col-4" data-slide="2">
+                <img name="mySlide" id="slideshow" src="S2p1.png" alt="Car 1"/>
+                <h4>Audi A3 Sportback TFSI</h4>
+                <p>price:31,677 €</p>
+                <button> > </button>
+            </div>
+            <div class="col-4" data-slide="3">
+                <img name="mySlide" id="slideshow" src="S3p1.png" alt="Car 1"/>
+                <h4>Citroen C4 Plus</h4>
+                <p>price:39,755 €</p>
+                <button> > </button>
+            </div>
+        <div class="col-4" data-slide="4">
+          <img name="mySlide" id="slideshow" src="S4p1.png" alt="Car 1"/>
+            <h4>BMW 520i</h4>
+            <p>price:57,530 €</p>
+            <button> > </button>
+            
+        </div>
+        <div class="col-4" data-slide="5">
+            <img name="mySlide" id="slideshow" src="S5p1.png" alt="Car 1"/>
+            <h4>Porsche Cayenne Turbo SUV</h4>
+            <p>price:156,980 €</p>
+            <button> > </button>
+        </div>
+        <div class="col-4" data-slide="6">
+            <img name="mySlide" id="slideshow" src="S6p1.png" alt="Car 1"/>
+            <h4>Mercedes-Benz C63 AMG </h4>
+            <p>price:48,550 €</p>
+            <button> > </button>
+        </div>
+        <div class="col-4" data-slide="7">
+            <img name="mySlide" id="slideshow" src="S7p1.png" alt="Car 1"/>
+            <h4>Tesla Model S Plaid AWD 750 kW</h4>
+            <p>price:128,958 €</p>
+            <button> > </button>
+        </div>
+        <div class="col-4" data-slide="8">
+            <a id="car-link"><img name="mySlide" id="slideshow" src="S8p4.png" alt="Car 1"/>
+            <h4>Ford Mustang Dark Horse 5.0 </h4>
+            <h3></h3>
+            <p class="p1">Price:139,780 €  <br>Sale price:134,800 €</p>
+            <button> > </button>
+            </a>
+        </div>
+        <div class="col-4" data-slide="9">
+            <img name="mySlide" id="slideshow" src="S9p1.jpg" alt="Car 1"/>
+            <h4>Cadillac Escalade Platinum 313 kW</h4>
+            <p>price:65,482 €</p>
+            <button> > </button>
+        </div>
+    </div>
+ </div>
+ <!-- footer -->
+ <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+                <h3>download our app</h3>
+                <p>download app for android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <a href=""><img src="appstore.png" alt="app store logo"></a>
+                    <a href=""><img src="playstore.png" alt="play store logo"></a>
+                </div>
+            </div>
+            <div class="footer-col2">
+                <a href="index.html"><img src="logo.png" alt="logo"></a>
+                <p>"Our purpose is to redefine the car-buying experience 
+                    by making the joy and benefits of owning a vehicle accessible to everyone. 
+                </p>
+            </div>
+            <div class="footer-col3">
+                <h3>useful links</h3>
+                <ul>
+                    <li><a href="">blog post</a></li>
+                    <li><a href="">privacy notice</a></li>
+                    <li><a href="">terms & conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+                <h3>follow us</h3>
+                <ul>
+                    <li><a href="">facebook</a></li>
+                   <li><a href="">instagram</a></li>
+                    <li><a href="">youtube</a></li>
+                    <li><a href="">x</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- js -->
+<script>
+    var MenuItems = document.getElementById("MenuItems")
+    MenuItems.style.maxHeight = "0px"
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+    {
+                MenuItems.style.maxHeight = "200px"
+}
+    else
+    {
+        MenuItems.style.maxHeight = "0px"
+    }
+    }
+</script>
+
 </body>
 </html>
