@@ -6,6 +6,108 @@
     <title>Account</title>
 </head>
 <body>
-    
+     
+    <div class="container">
+        <div class="navbar">
+           <div class="logo">
+               <a href="index.html"> <img src="logo.png" alt="logo"></a>
+           </div>
+           <nav>
+              
+               <ul id="MenuItems">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="cars.html">Cars</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="account.html">Account</a></li>
+               </ul>
+           </nav>
+           <img src="menu.png" class="menu-icon" width="30px" height="30px" onclick="menutoggle()">
+          </div>
+         </div>
+        <!-- ----------account -------- -->
+         <div class="account-page">
+           <div class="container">
+                   <div class="col-2">
+                       <div class="form-container">
+                           <div class="form-btn">
+                               <span onclick="login()">Login</span>
+                               <span onclick="register()">Register</span>
+                               <hr id="indicator">
+                           </div>
+                           <form id="LoginForm">
+                               <input id="" type="text" placeholder="Username">
+                               <input id="" type="password" placeholder="Password">
+                               <input  id="submit-btn" type="submit"  class="btn">
+                           </form>
+                           <form id="RegisterForm">
+                               <input id="nameid" type="text" placeholder="Name and Last-Name">
+                               <input id="userid" type="text" placeholder="Username">
+                               <input id="emailid" type="email" placeholder="Email">
+                               <input id="pass" type="password" placeholder="Password">
+                               <input  id="submit-btn" type="submit"  class="btn">
+                           </form>
+                       </div>
+                   </div>
+           </div>
+         </div>
+       <!-- footer -->
+      <div class="footer">
+       <div class="container">
+           <div class="row">
+               <div class="footer-col1">
+                   <h3>download our app</h3>
+                   <p>download app for android and ios mobile phone.</p>
+                   <div class="app-logo">
+                       <a href=""><img src="appstore.png" alt="app store logo"></a>
+                       <a href=""><img src="playstore.png" alt="play store logo"></a>
+                   </div>
+               </div>
+               <div class="footer-col2">
+                   <a href="index.html"><img src="logo.png" alt="logo"></a>
+                   <p>"Our purpose is to redefine the car-buying experience 
+                       by making the joy and benefits of owning a vehicle accessible to everyone. 
+                   </p>
+               </div>
+               <div class="footer-col3">
+                   <h3>useful links</h3>
+                   <ul>
+                       <li><a href="">blog post</a></li>
+                       <li><a href="">privacy notice</a></li>
+                       <li><a href="">terms & conditions</a></li>
+                   </ul>
+               </div>
+               <div class="footer-col4">
+                   <h3>follow us</h3>
+                   <ul>
+                       <li><a href="">facebook</a></li>
+                      <li><a href="">instagram</a></li>
+                       <li><a href="">youtube</a></li>
+                       <li><a href="">x</a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </div>
+       </body>
+       </html>
+   
+   
+      
+      <!-- js -->
+       <script>
+           var MenuItems = document.getElementById("MenuItems")
+           MenuItems.style.maxHeight = "0px"
+           function menutoggle(){
+               if(MenuItems.style.maxHeight == "0px")
+           {
+                       MenuItems.style.maxHeight = "200px"
+       }
+           else
+           {
+               MenuItems.style.maxHeight = "0px"
+           }
+           }
+       </script>
 </body>
 </html>
