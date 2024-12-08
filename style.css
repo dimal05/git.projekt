@@ -190,6 +190,7 @@ h4{
     font-weight: bold;
     color: #1f2b59;
 }
+/*------best offer------ */
 .offer{
     background: radial-gradient(#fff,#BCC6CC) ;
     margin-top: 10%;
@@ -198,4 +199,35 @@ h4{
 }
 .col-2 .best-offer{
     padding: 50px;
+}
+/*------feedback-------*/
+.feedback{
+    padding-top: 15%;
+}
+
+.feedback .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor: default;
+    transition: transform 0.5s;
+}
+.col-3 p{
+    font-size: 14px;
+    margin: 12px 0;
+    color: #777;
+}
+.feedback .col-3 img{
+    aspect-ratio: 1;
+    width: 50px;
+    margin: 20px;
+    border-radius: 50%;
+}
+.feedback .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 18px;
+}
+.feedback .col-3:hover{
+    transform: translateY(-10px);
 }
