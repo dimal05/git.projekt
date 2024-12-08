@@ -246,3 +246,55 @@ h4{
 .col-5 img:hover{
     filter: grayscale(0);
 }
+/* ----------footer----------- */
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size:14px ;
+    padding: 10px;
+}
+.footer-col1{
+    flex-basis: 30%;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom:20px ;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.app-logo{
+    margin: 10px;
+}
+.app-logo img{
+    width: 140px;
+    margin: 10px;
+}
+.footer-col2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col2 img{
+    border-radius: 50%;
+    width: 130px;
+    margin-bottom: 20px;
+}
+.footer-col3 ,.footer-col4{
+    flex-basis:12% ;
+    text-align: center;
+}
+.footer-col3 ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.footer-col4 ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.footer-col1,.footer-col2,.footer-col3,.footer-col4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
