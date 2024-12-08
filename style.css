@@ -86,3 +86,30 @@ p{
    padding: 50px 0;
 
 }
+/* --------categories---------- done*/
+.categories{
+    margin: 11% 10% ;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 40px;
+}
+.title,.title1{
+    text-align: center;
+    margin: 0 auto 60px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width:250px ;
+    margin-bottom:30px ;
+}
+
+.col-3 img{
+    width: 100%;
+    border-radius: 3%;
+    aspect-ratio: 0.5;
+}
