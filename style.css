@@ -231,3 +231,18 @@ h4{
 .feedback .col-3:hover{
     transform: translateY(-10px);
 }
+/*--------brands-------- */
+.manufacturer{
+    padding: 5%;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: default;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
