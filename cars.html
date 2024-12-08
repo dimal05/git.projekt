@@ -142,6 +142,122 @@
     }
     }
 </script>
-
+    <!-- js for slider -->
+    <script>var i = 0;
+        var imgArray1 = [
+            "p1.png",
+            "p2.png",
+            "p3.jpeg",
+            "p4.png"
+        ];
+        
+        var imgArray2 = [
+            "S2p1.png",
+            "S2p2.png",
+            "S2p3.png",
+            "S2p4.png"
+        ];
+        var imgArray3 = [
+           "S3p1.png",
+            "S3p2.png",
+            "S3p3.png",
+            "S3p4.png"
+        ];
+        var imgArray4 = [
+           "S4p1.png",
+           "S4p2.png",
+           "S4p3.png",
+           "S4p4.png",
+           "S4p5.png"
+        ];
+        var imgArray5 = [
+            "S5p1.png",
+            "S5p2.png",
+            "S5p3.png",
+            "S5p4.png",
+            "S5p5.png",
+            "S5p6.png"
+        ];
+        var imgArray6 = [
+            "S6p1.png",
+            "S6p2.png",
+            "S6p3.png",
+            "S6p4.png",
+            "S6p5.png",
+            "S6p6.png"
+        ];
+        var imgArray7 = [
+            "S7p1.png",
+            "S7p2.png",
+            "S7p3.png",
+            "S7p4.png",
+            "S7p5.png"
+        ];
+        var imgArray8 = [
+            "S8p4.png",
+            "S8p1.png",
+            "S8p2.png",
+            "S8p3.png",
+            "S8p5.png"
+        
+        ];
+        var imgArray9 = [
+            "S9p1.jpg",
+            "S9p2.png",
+            "S9p3.png",
+            "S9p4.png",
+            "S9p5.png"
+        ];
+        
+        
+        function ndrroImg(slideIndex) {
+            var imgArray;
+            if (slideIndex === 1) {
+                imgArray = imgArray1; 
+            } else if (slideIndex === 2) {
+                imgArray = imgArray2; 
+            } else if (slideIndex === 3) {
+                imgArray = imgArray3
+            }else if (slideIndex === 4) {
+                imgArray = imgArray4
+            } else if (slideIndex === 5) {
+                imgArray = imgArray5
+            } else if (slideIndex === 6) {
+                imgArray = imgArray6
+            }else if (slideIndex === 7) {
+                imgArray = imgArray7; 
+            } else if (slideIndex === 8) {
+                imgArray = imgArray8
+            }else if (slideIndex === 9) {
+                imgArray = imgArray9
+            }
+            
+        
+        
+            
+            var images = document.querySelectorAll('.col-4[data-slide="' + slideIndex + '"] img[name="mySlide"]');
+        
+            
+            images.forEach(function(image) {
+                image.src = imgArray[i];
+            });
+        
+           
+            if (i < imgArray.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+        }
+        
+        
+        var buttons = document.querySelectorAll('button');
+        buttons.forEach(function(button, index) {
+           
+            button.addEventListener('click', function() {
+                ndrroImg(index + 1); 
+            });
+        });
+        </script>
 </body>
 </html>
